@@ -72,9 +72,6 @@ jobs:
         key: cached-build-${{github.sha}}
         path: .
 
-    permissions:
-      contents: read
-
     steps:
 
     # https://github.com/marketplace/actions/maven-dependency-tree-dependency-submission
