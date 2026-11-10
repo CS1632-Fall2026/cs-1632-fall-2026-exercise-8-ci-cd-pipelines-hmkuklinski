@@ -5,7 +5,7 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>io.github.wonsunahn</groupId>
-  <artifactId>cs1632-cicd-pipelines</artifactId>
+  <artifactId>cs1632-cicd-pipelines-hak199</artifactId>
   <version>1.0</version>
   <packaging>jar</packaging>
 
@@ -35,13 +35,21 @@
     <url>https://github.com/wonsunahn/CS1632_CICD_JUnit/tree/main</url>
   </scm>
 
+    <distributionManagement>
+    <repository>
+      <id>github</id>
+      <name>GitHub Apache Maven Packages</name>
+      <url>https://maven.pkg.github.com/CS1632-Fall2026/cs-1632-fall-2026-exercise-8-ci-cd-pipelines-hmkuklinski</url>
+    </repository>
+  </distributionManagement>
+
   <properties>
     <maven.compiler.source>11</maven.compiler.source>
     <maven.compiler.target>11</maven.compiler.target>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <jacoco-maven-plugin.version>0.8.11</jacoco-maven-plugin.version>
+    <jacoco-maven-plugin.version>0.8.16</jacoco-maven-plugin.version>
     <maven-javadoc-plugin.version>3.6.3</maven-javadoc-plugin.version>
-    <maven-surefire-plugin.version>3.5.6</maven-surefire-plugin.version>
+    <maven-surefire-plugin.version>3.6.1</maven-surefire-plugin.version>
   </properties>
 
   <dependencies>
@@ -49,7 +57,7 @@
     <dependency>
       <groupId>org.mockito</groupId>
       <artifactId>mockito-core</artifactId>
-      <version>5.7.0</version>
+      <version>5.24.0</version>
     </dependency>
 
 
@@ -67,7 +75,7 @@
       <plugin>
         <groupId>org.codehaus.mojo</groupId>
         <artifactId>exec-maven-plugin</artifactId>
-        <version>3.0.0</version>
+        <version>3.6.4</version>
         <configuration>
           <mainClass>edu.pitt.cs.RentACatImpl</mainClass>
         </configuration>
@@ -75,7 +83,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-site-plugin</artifactId>
-        <version>3.12.1</version>
+        <version>3.22.0</version>
       </plugin>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
